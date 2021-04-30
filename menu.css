@@ -1,0 +1,14 @@
+footer {
+    background-color: grey;
+    width: 100%;
+    color: honeydew;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    padding-left: 60px;
+}

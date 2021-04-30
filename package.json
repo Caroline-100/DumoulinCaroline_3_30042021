@@ -1,0 +1,15 @@
+{
+  "name": "maquettes-ohmyfood",
+  "version": "1.0.0",
+  "description": "\"projet 3 maquette oh my food\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/pageacc.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Caroline-100"
+  },
+  "author": "Caroline",
+  "license": "ISC"
+}
