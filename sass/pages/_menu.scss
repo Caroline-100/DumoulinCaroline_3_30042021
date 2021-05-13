@@ -1,0 +1,148 @@
+section.menu {
+  article {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    @include cards;
+    h4 {
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .bbox {
+      background-color: $bluesky;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      height: auto;
+      width: 0;
+      height: auto;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      transition: 1.5s ease;
+    }
+    .substitle_menu {
+      width: auto;
+    }
+    .slide_left {
+      transition: 1000ms ease-out;
+      margin-right: 10px;
+      width: 30%;
+      height: auto;
+      margin-top: 0;
+      justify-content: flex-end;
+      display: flex;
+      align-items: flex-end;
+    }
+    .choice-menu {
+      display: flex;
+      height: auto;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+.bloc:hover .bbox {
+  width: 100px;
+  overflow: hidden;
+}
+.bloc {
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding-left: 15px;
+  background-color: $purple;
+}
+.bloc:hover {
+  .slide_left {
+    transition: 500ms;
+    // background-color: chocolate;
+    margin-right: 10px;
+  }
+}
+.price {
+  display: flex;
+}
+.wrap {
+  position: relative;
+}
+
+p.substitle_menu {
+  width: 90%;
+}
+
+p.substitle_menu {
+  text-overflow: ellipsis;
+  transition: width 1500ms ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 60%;
+}
+div.heading--over {
+  margin-top: -10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 25px;
+  background-color: white;
+}
+#command {
+  box-shadow: none;
+  text-align: center;
+  background: none;
+}
+
+.heading {
+  width: 50%;
+  font-family: Shrikhand;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.title--menu {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  width: 7%;
+  margin-left: 4%;
+  margin-bottom: 5px;
+  border-bottom: 2px solid $bluesky;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.substitle_menu {
+  margin-top: 0;
+  font-weight: lighter;
+}
+.image_fond {
+  width: $onepercent_width;
+  height: 14rem;
+  object-fit: cover;
+  position: relative;
+}
+.photo_presentation--wide {
+  margin: 0;
+}
+a {
+  width: 33%;
+  padding-left: 4%;
+  text-decoration: none;
+  color: #020202;
+}
+
+.menu {
+  .animation_progressive {
+    animation: transition 500ms, opacity 500ms ease-in-out 1s forwards;
+    &__plate {
+      animation: transition 2500ms, opacity 2500ms ease-in-out 1s forwards;
+    }
+    &__desserts {
+      animation: transition 3500ms, opacity 3500ms ease-in-out 1s forwards;
+    }
+  }
+}
