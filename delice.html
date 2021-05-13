@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sa/essais.css" />
-    <title>Delice</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Le délice des sens</title>
     <script
       src="https://kit.fontawesome.com/877c0ba17d.js"
       crossorigin="anonymous"
@@ -12,91 +12,163 @@
   </head>
   <body>
     <nav>
-      <a href="/pageAcceuil.html">
+      <a href="pageAcceuil.html">
         <i class="fas fa-arrow-left"></i>
       </a>
-      <img src="./images/logo/ohmyfood@2x.svg" alt="" />
+      <img src="public/css/images/logo/ohmyfood.png" alt="logo" width ="120px" />
     </nav>
-    <!-- <main></main> -->
-    <section>
-      <figure>
-        <img
-          class="image_fond"
-          src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="image principale assiette de presentation restaurants"
-        />
-      </figure>
-      <section>
-        <h1 class="heading">Le restaurant ess</h1>
-        <section class="menu">
-          <h3 class="title-menu">Entrées</h3>
-          <span class="span"></span>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-        </section>
-        <section class="menu">
-          <h3 class="title-menu">Plats</h3>
-          <span class="span"></span>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-        </section>
-        <section class="menu">
-          <h3 class="title-menu">Desserts</h3>
-          <span class="span"></span>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne </p><p>25 E</p>
-          </article>
-          <article id="command">
-            <button class="btn">Explorer nos restaurants</button>
-          </article>
-        </section>
-      </section>
-    <footer class="footer-background footer-wide">
+    <figure class="photo_presentation--wide">
       <img
-        class="change-color"
-        src="./images/logo/ohmyfood@2x copy.svg"
-        width="120"
-        alt=""
+      class="image_fond"
+      src="./public/css/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+      alt="image principale assiette de presentation restaurants"
       />
-      <div>
-        <i class="fas fa-utensils"></i>
-        <p class="para-pad">Proposer un restaurant</p>
-      </div>
-      <div>
-        <i class="fas fa-hands-helping"></i>
-        <p class="hand_para-pad">Devenir partenaire</p>
-      </div>
-      <p class="para-pad">Mentions Legale</p>
-      <p class="contact">Contact</p>
-    </footer>
+    </figure>
+    <main>
+    <section class="menu">
+        <div class="heading--over">
+          <h1 class="heading">Le délice des sens</h1>
+          <i class="far fa-heart"></i>
+        </div>
+        <section class="menu">
+          <h3 class="title--menu">Entrées</h3>
+          <article class="bloc animation_progressive">
+            <div class="choice-menu">
+              <h4 class="title-plate">Tartare de thon</h4>
+              <p class="substitle_menu">Assaisonné au yuzu </p>
+            </div>
+                <p class="slide_left">25€</p>
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+          <article class="bloc animation_progressive">
+            <div class="choice-menu">
+              <h4 class="title-plate">Bouchée de homard croustillant </h4>
+              <p class="substitle_menu">Et sa farandole de petits légumes </p>
+            </div>
+              <p class="slide_left">35€</p>
+              <div class="bbox">
+                <div class="price">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+          </article>
+          <article class="bloc animation_progressive">
+            <div class="choice-menu">
+              <h4 class="title-plate">Velouté de cèpes </h4>
+            <p class="substitle_menu">Aux truffes</p>
+          </div>
+              <p class="slide_left">20€</p>
+          <div class="bbox">
+            <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="menu">
+          <h3 class="title--menu">Plats</h3>
+
+          <article class="bloc animation_progressive__plate">
+            <div class="choice-menu">
+              <h4 class="title-plate">Poulet rôti aux herbes de Provence</h4>
+              <p class="substitle_menu">Et sa crème de truffe </p>
+            </div>
+           <p class="slide_left">40€</p>
+            <div class="bbox">
+              <div class="price">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            
+          </article>
+          <article class="bloc animation_progressive__plate">
+            <div class="choice-menu">
+              <h4 class="title-plate">Langouste rôtie </h4>
+              <p class="substitle_menu">Et ses légumes de saison</p>
+            </div>
+                <p class = "slide_left">35€</p>  
+            <div class="bbox">
+              <div class="price">
+                  <i class="fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+          <article class="bloc animation_progressive__plate">
+            <div class="choice-menu">
+              <h4 class="title-plate">Côte de boeuf Angus </h4>
+              <p class="substitle_menu">Et sa purée de panais </p>
+            </div>
+         <p class = "slide_left">44€</p>     
+            <div class="bbox">
+              <div class="price">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+          </article>
+        </section>
+        <section class="menu">
+          <h3 class="title--menu">Desserts</h3>
+          <article class=" bloc animation_progressive__desserts">  
+            <div class="choice-menu">
+            <h4 class="title-plate">Farandole de desserts</h4>
+            <p class="substitle_menu">Du chef</p>
+            </div>
+                <p class="slide_left">18€</p>
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+          <article class=" bloc animation_progressive__desserts">
+            <div class="choice-menu">
+            <h4 class="title-plate">Crème brulée </h4>
+              <p class="substitle_menu">Revisitée </p>
+            </div>
+              <p class="slide_left">22€</p>
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+          <article class=" bloc animation_progressive__desserts">
+            <div class="choice-menu">
+              <h4 class="title-plate">Tiramisu</h4>
+              <p class="substitle_menu">À la noisette</p>
+            </div>
+                <p class="slide_left">23€</p>
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <article id="command">
+        <button class="btn">Commander</button>
+      </article>
+    <footer class="footer--background footer--wide">
+      <ul class="footer">
+        <li>
+          <img
+            class="change-color"
+            src="public/css/images/logo/output-onlinepngtools.png"
+            width="120"
+            alt=""
+          />
+        </li>
+        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li>Mentions Legale</li>
+        <li><a href = "mailto: abc@example.com">Contact</a>
+         </li>
+      </ul>
+      </footer>
   </body>
 </html>

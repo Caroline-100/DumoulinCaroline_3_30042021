@@ -1,17 +1,63 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+// racine file https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+:root {
+  font-size: 12px;
+  font-family: sans-serif;
 }
-
-html {
-    // 10px div by def of 16px
-    font-size: 62.5%;
-}
-
 body {
-    box-sizing: border-box;
-    background: $colour-secondary;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  ul.selection__restaurant {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    justify-content: space-around;
+    li {
+      width: 20%;
+      margin-bottom: 0;
+    }
+  }
+  li > .fas.fa-utensils,
+  li > .fas.fa-hands-helping {
+    padding-right: 1%;
+  }
+  button.reservation__btn--margin {
+    margin: 2%;
+  }
+  .functionality__title {
+    display: flex;
+    justify-content: center;
+  }
+  .functionality__list {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+
+    > li:nth-child(1),
+    > li:nth-child(2),
+    li:nth-child(3) {
+      width: 25%;
+      margin-left: 3rem;
+      .number {
+        position: static;
+        margin-left: -15px;
+        width: 4%;
+      }
+    }
+  }
+  .footer--background {
+    // background-color: white;
+ 
+    .footer {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      // background-color: red;
+    }
+  }
+  .number--background {
+    background: #9356dc;
+    color: white;
+  }
 }

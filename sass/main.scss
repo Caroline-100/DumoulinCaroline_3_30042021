@@ -1,19 +1,13 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-
 @import "./base/base";
-@import "./base/typography";
-
-@import "./components/buttons";
-
-@import "./layout/header";
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
-
-
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
+@import "./layout/search";
+@import "./layout/reservation";
+@import "./layout/functionality";
+@import "./base/keyframe";
+@import "./components/buttons";
+@import "./layout/restaurants";
+@import "./layout/footer";
+@import "./pages/menu";
+@import "./components/heart";

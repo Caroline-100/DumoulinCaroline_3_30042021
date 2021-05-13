@@ -1,0 +1,65 @@
+//explaination
+i.fas.fa-mobile-alt {
+  width: 0px;
+  font-size: large;
+}
+.functionality {
+  &--flex {
+  @include f_col_center;
+  &__list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+}
+
+.functionality__list > li {
+
+  width: 90%;
+  i {
+    margin: 22px;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    transform: scale(1);
+  }
+}
+.functionality__list--flex > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+
+}
+.functionality__list--wide > li {
+  width: 90%;
+}
+.functionality__list--margin > li {
+  margin-left: 0px;
+  margin-bottom: 0.625rem;
+}
+.functionality__list--border > li {
+  border-left-width: 0px;
+  border: 1px solid grey;
+}
+.functionality__list--rounded > li {
+  border-radius: 1.25rem;
+}
+.functionality__list > li:hover {
+  background-color: #9256dc71;
+  i {
+
+    color: #9256dccc;
+    transition-delay: 500ms;
+    box-shadow: 2px 6px 5px -2px #9256dc00;
+  }
+  p {
+    transform: scale(1.09);
+  }
+
+}
+
+.functionality__title {
+  margin-left: 6.25rem;
+}

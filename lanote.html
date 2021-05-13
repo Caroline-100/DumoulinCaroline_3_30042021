@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sa/essais.css" />
-    <title>La note</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>La note enchantée</title>
     <script
       src="https://kit.fontawesome.com/877c0ba17d.js"
       crossorigin="anonymous"
@@ -12,91 +12,183 @@
   </head>
   <body>
     <nav>
-      <a href="/pageAcceuil.html">
+      <a href="pageAcceuil.html">
         <i class="fas fa-arrow-left"></i>
       </a>
-      <img src="./images/logo/ohmyfood@2x.svg" alt="" />
+      <img src="public/css/images/logo/ohmyfood.png" alt="logo" width ="120px"/>
     </nav>
-    <!-- <main></main> -->
     <section>
-      <figure>
+      <figure class="photo_presentation--wide">
         <img
-          class="image_fond"
-          src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="image principale assiette de presentation restaurants"
+        class="image_fond"
+        src="./public/css/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+        alt="image principale assiette de presentation restaurants"
         />
       </figure>
-      <section>
-        <h1 class="heading">Le restaurant ess</h1>
+      
+      <main>
+      <section class="menu">
+        <div class="heading--over">
+        <h1 class="heading">La note enchantée</h1>
+        <i class="far fa-heart"></i>
+      </div>
         <section class="menu">
-          <h3 class="title-menu">Entrées</h3>
-          <span class="span"></span>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <h3 class="title--menu">Entrées</h3>
+          <article class="animation_progressive bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Ravioles de foie gras</h4>
+            <p class="substitle_menu">Accompagnés de leur crème à la truffe</p>
+          </div>
+          <p class="slide_left">25 €</p> 
+            <div class="bbox">
+              <div class="price">
+                <i class= "fas fa-check"></i>
+              </div>
+            </div>
           </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <article class="animation_progressive bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Caviar osciètre </h4>
+            <p class="substitle_menu">Sur blini à la farine de blé noir</p>
+            </div>
+              <p class="slide_left">35€</p>
+            <div class="bbox">
+              <div class="price">
+                <i class= "fas fa-check"></i>
+              </div>
+            </div>
           </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <article class="animation_progressive bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Homard et espuma de potiron</h4>
+            <p class="substitle_menu">Mariné aux zestes d'orange</p>
+          </div>
+              <p class="slide_left">20 €</p> 
+            <div class="bbox">
+              <div class="price">
+                <i class= "fas fa-check"></i>
+              </div>
+            </div>
+          </article>
+          <article class="animation_progressive bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Foie gras de canard cuit entier</h4>
+            <p class="substitle_menu">Confiture de figue et pain toasté</p>
+          </div>
+              <p class="slide_left">35 €</p> 
+            </div>
+            <div class="bbox">
+              <div class="price">
+                <i class= "fas fa-check"></i>
+              </div>
+            </div>
           </article>
         </section>
         <section class="menu">
-          <h3 class="title-menu">Plats</h3>
-          <span class="span"></span>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <h3 class="title--menu">Plats</h3>
+
+          <article class = "animation_progressive__plate bloc">
+
+            <div class="choice-menu">
+            <h4 class="title-plate">Noix de coquilles Saint-Jacques</h4>
+            <p class="substitle_menu">Sur lit de purée de céleri-rave</p>
+            </div>
+       
+          <p class="slide_left">40€</p> 
+          <div class="bbox">
+            <div class="price">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
           </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <article class = " animation_progressive__plate bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Langoustine poêlée</h4>
+            <p class="substitle_menu">Purée de patate douce</p>
+            </div> 
+        
+          <p class="slide_left">35 €</p> 
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
           </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <article class = "animation_progressive__plate bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Mijoté de queue de boeuf </h4>
+            <p class="substitle_menu">Et riz sauvage aux zestes de citron</p>
+            </div>
+          <p class="slide_left">44 €</p> 
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
           </article>
         </section>
         <section class="menu">
-          <h3 class="title-menu">Desserts</h3>
-          <span class="span"></span>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <h3 class="title--menu">Desserts</h3>
+          <article class="animation_progressive__desserts bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Macaron noisette et chocolat</h4>
+            <p class="substitle_menu">
+              Glace au caramel brun et sel de Guérande</p>
+            </div>
+                <p class="slide_left">18 €</p> 
+              <div class="bbox">
+                <div class="price">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
           </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
+          <article class="animation_progressive__desserts bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">Baba au rhum revisité</h4>
+            <p class="substitle_menu">Avec son coulis de citron</p>
+            </div>
+                <p class="slide_left">22 €</p> 
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
           </article>
-          <article>
-            <h4 class="title-plate">Soupe de Pois casses</h4>
-            <p class="substitle_menu">Au piment de cayenne</p><p>25 E</p> 
-          </article>
-          <article id="command">
-            <button class="btn">Explorer nos restaurants</button>
+          <article class= "animation_progressive__desserts bloc">
+            <div class="choice-menu">
+            <h4 class="title-plate">
+              Tarte au citron meringuée </h4>
+              <p class="substitle_menu"> Déstructurée</p>
+            </div>
+                <p class="slide_left">18 €</p> 
+              <div class="bbox">
+                <div class="price">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
           </article>
         </section>
       </section>
-    <footer class="footer-background footer-wide">
-      <img
-        class="change-color"
-        src="./images/logo/ohmyfood@2x copy.svg"
-        width="120"
-        alt=""
-      />
-      <div>
-        <i class="fas fa-utensils"></i>
-        <p class="para-pad">Proposer un restaurant</p>
-      </div>
-      <div>
-        <i class="fas fa-hands-helping"></i>
-        <p class="hand_para-pad">Devenir partenaire</p>
-      </div>
-      <p class="para-pad">Mentions Legale</p>
-      <p class="contact">Contact</p>
-    </footer>
+    </main>
+      <article id="command">
+        <button class="btn">Commander</button>
+      </article>
+    <footer class="footer--background footer--wide">
+      <ul class="footer">
+        <li>
+          <img
+            class="change-color"
+            src="public/css/images/logo/output-onlinepngtools.png"
+            width="120"
+            alt=""
+          />
+        </li>
+        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li>Mentions Legale</li>
+        <li><a href = "mailto: abc@example.com">Contact</a>
+        </li>
+      </ul>
+  </footer>
   </body>
 </html>
