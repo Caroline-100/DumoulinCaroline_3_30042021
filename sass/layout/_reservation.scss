@@ -8,6 +8,10 @@
   @include f_col_center;
 }
 .reservation__subtitle {
-  padding-left: 15px;
+  text-align: center;
+  font-size: 19px; 
   margin-top: 0;
+}
+h3.reservation__title {
+  font-size: 25px;
 }
