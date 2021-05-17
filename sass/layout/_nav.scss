@@ -1,13 +1,15 @@
 nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  box-shadow:2px 2px 2px #eaeaea;
+  @include elemt_center;
+  box-shadow: 2px 2px 2px $lightgrey;
   img {
     width: 10.25rem;
     padding-bottom: 0.625rem;
     padding-top: 0.625rem;
   }
+}
+.nav__elemt--center {
+  width: auto;
+  margin-right: 2em;
 }
 
 .nav_accueil {

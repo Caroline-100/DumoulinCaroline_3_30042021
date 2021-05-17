@@ -1,14 +1,13 @@
 @mixin cards {
   border-radius: 10px;
   margin: 1rem;
-  box-shadow: 0px 8px 8px 1px #bababa;
+  box-shadow: 1px 1px 8px 1px #bababa;
   background-color: #ffffff;
   transform: scale(1);
-
-
+  overflow: hidden;
+  display: flex;
 }
 @mixin btn_magic {
-  
   border: 1px solid #9356dc;
   background: rgb(147, 86, 220);
   background: radial-gradient(
@@ -27,3 +26,13 @@
   align-items: center;
   display: flex;
 } // @include f_col_center;
+
+@mixin zero_opacity {
+  opacity: $zero;
+}
+
+@mixin elemt_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

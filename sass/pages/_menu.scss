@@ -1,12 +1,15 @@
 section.menu {
   article {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
     @include cards;
     h4 {
       margin-bottom: 0;
-      width: 100%;
+      width: $onepercent_width;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      transition: 500ms all;
+      white-space: nowrap;
+      margin-top: 0;
+      padding: 0.5em;
     }
     .bbox {
       background-color: $bluesky;
@@ -14,7 +17,6 @@ section.menu {
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      height: auto;
       width: 0;
       height: auto;
       border-top-right-radius: 10px;
@@ -24,92 +26,91 @@ section.menu {
     .choice-menu {
       display: flex;
       height: auto;
-      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: $onepercent_width;
+      padding: 0.5em;
       flex-direction: column;
     }
-
   }
 }
 .slide_left {
   transition: 1000ms ease-out;
-  margin-right: 10px;
-
+  padding: 0.5em;
   height: auto;
-  margin-top: 0;
-
   justify-content: flex-end;
   display: flex;
   align-items: flex-end;
 }
 
 .bloc:hover .bbox {
-  width: 100px;
+  width: 6em;
   overflow: hidden;
-
 }
 .bloc {
   position: relative;
-  width: 90%;
   height: auto;
-  padding-left: 15px;
+  margin: $zero auto;
   background-color: $purple;
 }
 .bloc:hover {
+  .substitle_menu {
+    white-space: nowrap;
+    transition: 500ms all;
+  }
   .slide_left {
     transition: 500ms;
-
     margin-right: 10px;
-    width: 30%;
+    width: 3em;
+  }
+}
 
-  }
-  .substitle_menu {
-    text-overflow: ellipsis;
+.substitle_menu {
+  text-overflow: ellipsis;
   overflow: hidden;
-  width: 60%;
-  }
+  transition: 500ms all;
+  padding-top: 0.1em;
+  padding-left: 0.5em;
+  white-space: nowrap;
+  margin-top: $zero;
 }
 .price {
   display: flex;
+  .fas.fa-check {
+    font-size: large;
+  }
 }
 .wrap {
   position: relative;
 }
 
-div.heading--over {
-  margin-top: -10%;
-  display: flex;
+header.heading--over {
+  margin-top: -2em;
+@include elemt_center;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: relative;
   border-radius: 25px;
-  background-color: white;
+  background-color: $softgrey ;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 22px;
+  font-family: Shrikhand;
+  .heading {
+    width: 50%;
+  }
+}
+.title--menu {
+  padding: $one $one 0.5em $zero ;
+  margin: $zero $zero $one $one;
+  width: 2em;
+  border-bottom: 0.2em solid $bluesky;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 #command {
   box-shadow: none;
   text-align: center;
   background: none;
-}
-
-.heading {
-  width: 50%;
-  font-family: Shrikhand;
-  font-size: 22px;
-  font-style: italic;
-  font-weight: bolder;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.title--menu {
-  padding-top: 5%;
-  padding-bottom: 2%;
-  width: 7%;
-  margin-left: 4%;
-  margin-bottom: 5px;
-  border-bottom: 2px solid $bluesky;
-  text-transform: uppercase;
-  font-weight: lighter;
 }
 
 .image_fond {
@@ -119,18 +120,17 @@ div.heading--over {
   position: relative;
 }
 .photo_presentation--wide {
-  margin: 0;
+  margin: $zero;
 }
 a {
   width: 33%;
-  padding-left: 4%;
   text-decoration: none;
-  color: #020202;
+  color: $darkgrey;
 }
 
 .menu {
   .animation_progressive {
-    animation: transition 500ms, opacity 500ms ease-in-out 1s forwards;
+    animation: transition 1000ms, opacity 1000ms ease-in-out 1s forwards;
     &__plate {
       animation: transition 2500ms, opacity 2500ms ease-in-out 1s forwards;
     }

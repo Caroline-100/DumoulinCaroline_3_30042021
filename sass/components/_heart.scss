@@ -1,27 +1,30 @@
 .heart {
   position: absolute;
-  background-color: white;
+  background: rgb(147,86,220);
+  background: linear-gradient(90deg, rgba(147,86,220,1) 48%, rgba(209,94,171,1) 73%, rgba(153,226,208,1) 93%);
   height: 70px;
-  width: 70px;
-  top: 40%;
-  right: 40%;
+  top:50%;
+  right:50%;
+  bottom:50%;
+  left:50%;
   transform: rotate(45deg);
-  animation: beat 2s infinite;
+  animation: loader 2s, beat 2s infinite;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 1;
 }
-@keyframes beat {
-  50% {
-    transform: rotate(45deg) scale(1.5);
-  }
+.heart,
+.heart-l,
+.heart-r {
+  width: 70px;
 }
-
 .heart-l,
 .heart-r {
   height: 40px;
-  width: 70px;
-  background-color: orange;
+  background: rgb(147,86,220);
+  background: linear-gradient(90deg, rgba(147,86,220,1) 48%, rgba(209,94,171,1) 73%, rgba(153,226,208,1) 93%);
   position: relative;
-
-  border-radius: 70px 70px 0 0;
+  border-radius: 70px 70px $zero $zero;
 }
 .heart-r {
   bottom: 25px;
