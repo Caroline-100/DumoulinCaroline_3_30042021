@@ -1,0 +1,67 @@
+@media screen and (min-width: 600px) {
+  .menu {
+    // width: $onepercent_width;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    article {
+      width: 33%;
+    }
+  }
+  ul.selection__restaurant {
+    width: $onepercent_width;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    justify-content: space-around;
+    li {
+      width: 20em;
+      margin-bottom: 0;
+    }
+  }
+  li > .fas.fa-utensils,
+  li > .fas.fa-hands-helping {
+    padding-right: 1%;
+  }
+  button.reservation__btn--margin {
+    margin: 2%;
+  }
+  .functionality__title {
+    display: flex;
+    justify-content: center;
+  }
+  #width-query {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+
+    > li:nth-child(1),
+    > li:nth-child(2),
+    li:nth-child(3) {
+      width: 25%;
+      margin-left: 3rem;
+      .number {
+        position: static;
+        margin-left: -15px;
+        width: 4%;
+      }
+    }
+  }
+  .footer--background {
+    .footer {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  .number--background {
+    background: $purple;
+    color: $white;
+  }
+  .heart {
+    top:50%;
+    right:50%;
+    bottom:50%;
+    left:50%;
+    background-color: red;
+  }
+}

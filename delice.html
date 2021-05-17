@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css" />
     <title>Le délice des sens</title>
     <script
       src="https://kit.fontawesome.com/877c0ba17d.js"
@@ -11,40 +11,74 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <a href="pageAcceuil.html">
-        <i class="fas fa-arrow-left"></i>
-      </a>
-      <img src="public/css/images/logo/ohmyfood.png" alt="logo" width ="120px" />
-    </nav>
-    <figure class="photo_presentation--wide">
-      <img
-      class="image_fond"
-      src="./public/css/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-      alt="image principale assiette de presentation restaurants"
-      />
-    </figure>
-    <main>
-    <section class="menu">
-        <div class="heading--over">
+    <div class="heart">
+      <div class="heart-l"></div>
+      <div class="heart-r"></div>
+    </div>
+    <div class="body">
+      <nav>
+        <a class="nav__elemt--center" href="pageAcceuil.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <img
+          src="public/css/images/logo/ohmyfood.png"
+          alt="logo"
+          width="120px"
+        />
+      </nav>
+      <figure class="photo_presentation--wide">
+        <img
+          class="image_fond"
+          src="./public/css/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+          alt="image principale assiette de presentation restaurants"
+        />
+      </figure>
+      <main>
+        <header class="heading--over">
           <h1 class="heading">Le délice des sens</h1>
           <div class="icon">
-            <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart">
-              <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+            <svg
+              class="heart-main"
+              viewBox="0 0 512 512"
+              width="20"
+              title="heart"
+            >
+              <path
+                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+              />
+              <defs>
+                <linearGradient id="MyGradient">
+                  <stop offset="5%" stop-color="#9356DC" />
+                  <stop offset="95%" stop-color="#ff79da" />
+                </linearGradient>
+              </defs>
             </svg>
-            <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
-              <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+            <svg
+              class="heart-background"
+              viewBox="0 0 512 512"
+              width="20"
+              title="heart"
+            >
+              <path
+                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+              />
+              <defs>
+                <linearGradient id="MyGradient">
+                  <stop offset="5%" stop-color="#9356DC" />
+                  <stop offset="95%" stop-color="#ff79da" />
+                </linearGradient>
+              </defs>
             </svg>
           </div>
-        </div>
+        </header>
+        <h3 class="title--menu">Entrées</h3>
         <section class="menu">
-          <h3 class="title--menu">Entrées</h3>
           <article class="bloc animation_progressive">
             <div class="choice-menu">
               <h4 class="title-plate">Tartare de thon</h4>
-              <p class="substitle_menu">Assaisonné au yuzu </p>
+              <p class="substitle_menu">Assaisonné au yuzu</p>
             </div>
-                <p class="slide_left">25€</p>
+            <p class="slide_left">25€</p>
             <div class="bbox">
               <div class="price">
                 <i class="fas fa-check"></i>
@@ -53,102 +87,100 @@
           </article>
           <article class="bloc animation_progressive">
             <div class="choice-menu">
-              <h4 class="title-plate">Bouchée de homard croustillant </h4>
-              <p class="substitle_menu">Et sa farandole de petits légumes </p>
+              <h4 class="title-plate">Bouchée de homard croustillant</h4>
+              <p class="substitle_menu">Et sa farandole de petits légumes</p>
             </div>
-              <p class="slide_left">35€</p>
-              <div class="bbox">
-                <div class="price">
-                    <i class="fas fa-check"></i>
-                  </div>
-                </div>
+            <p class="slide_left">35€</p>
+            <div class="bbox">
+              <div class="price">
+                <i class="fas fa-check"></i>
+              </div>
+            </div>
           </article>
           <article class="bloc animation_progressive">
             <div class="choice-menu">
-              <h4 class="title-plate">Velouté de cèpes </h4>
-            <p class="substitle_menu">Aux truffes</p>
-          </div>
-              <p class="slide_left">20€</p>
-          <div class="bbox">
-            <div class="price">
+              <h4 class="title-plate">Velouté de cèpes</h4>
+              <p class="substitle_menu">Aux truffes</p>
+            </div>
+            <p class="slide_left">20€</p>
+            <div class="bbox">
+              <div class="price">
                 <i class="fas fa-check"></i>
               </div>
             </div>
           </article>
         </section>
+        <h3 class="title--menu">Plats</h3>
         <section class="menu">
-          <h3 class="title--menu">Plats</h3>
-
           <article class="bloc animation_progressive__plate">
             <div class="choice-menu">
               <h4 class="title-plate">Poulet rôti aux herbes de Provence</h4>
-              <p class="substitle_menu">Et sa crème de truffe </p>
+              <p class="substitle_menu">Et sa crème de truffe</p>
             </div>
-           <p class="slide_left">40€</p>
+            <p class="slide_left">40€</p>
             <div class="bbox">
               <div class="price">
-                  <i class="fas fa-check"></i>
-                </div>
+                <i class="fas fa-check"></i>
               </div>
-            
+            </div>
           </article>
           <article class="bloc animation_progressive__plate">
             <div class="choice-menu">
-              <h4 class="title-plate">Langouste rôtie </h4>
+              <h4 class="title-plate">Langouste rôtie</h4>
               <p class="substitle_menu">Et ses légumes de saison</p>
             </div>
-                <p class = "slide_left">35€</p>  
+            <p class="slide_left">35€</p>
             <div class="bbox">
               <div class="price">
-                  <i class="fas fa-check"></i>
+                <i class="fas fa-check"></i>
               </div>
             </div>
           </article>
           <article class="bloc animation_progressive__plate">
             <div class="choice-menu">
-              <h4 class="title-plate">Côte de boeuf Angus </h4>
-              <p class="substitle_menu">Et sa purée de panais </p>
+              <h4 class="title-plate">Côte de boeuf Angus</h4>
+              <p class="substitle_menu">Et sa purée de panais</p>
             </div>
-         <p class = "slide_left">44€</p>     
+            <p class="slide_left">44€</p>
             <div class="bbox">
               <div class="price">
-                  <i class="fas fa-check"></i>
-                </div>
+                <i class="fas fa-check"></i>
               </div>
+            </div>
           </article>
         </section>
+        <h3 class="title--menu">Desserts</h3>
         <section class="menu">
-          <h3 class="title--menu">Desserts</h3>
-          <article class=" bloc animation_progressive__desserts">  
+          <article class="bloc animation_progressive__desserts">
             <div class="choice-menu">
-            <h4 class="title-plate">Farandole de desserts</h4>
-            <p class="substitle_menu">Du chef</p>
+              <h4 class="title-plate">Farandole de desserts</h4>
+              <p class="substitle_menu">Du chef</p>
             </div>
-                <p class="slide_left">18€</p>
+            <p class="slide_left">18€</p>
             <div class="bbox">
               <div class="price">
                 <i class="fas fa-check"></i>
               </div>
             </div>
           </article>
-          <article class=" bloc animation_progressive__desserts">
+          <article class="bloc animation_progressive__desserts">
             <div class="choice-menu">
-            <h4 class="title-plate">Crème brulée </h4>
-              <p class="substitle_menu">Revisitée </p>
+              <h4 class="title-plate">Crème brulée</h4>
+              <p class="substitle_menu">Revisitée</p>
             </div>
-              <p class="slide_left">22€</p>
+            <p class="slide_left">22€</p>
             <div class="bbox">
               <div class="price">
                 <i class="fas fa-check"></i>
               </div>
             </div>
           </article>
-          <article class=" bloc animation_progressive__desserts">
+          <article class="bloc animation_progressive__desserts">
             <div class="choice-menu">
               <h4 class="title-plate">Tiramisu</h4>
               <p class="substitle_menu">À la noisette</p>
             </div>
-                <p class="slide_left">23€</p>
+            <p class="slide_left">23€</p>
             <div class="bbox">
               <div class="price">
                 <i class="fas fa-check"></i>
@@ -160,22 +192,22 @@
       <article id="command">
         <button class="btn">Commander</button>
       </article>
-    <footer class="footer--background footer--wide">
-      <ul class="footer">
-        <li>
-          <img
-            class="change-color"
-            src="public/css/images/logo/output-onlinepngtools.png"
-            width="120"
-            alt=""
-          />
-        </li>
-        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-        <li>Mentions Legale</li>
-        <li><a href = "mailto: abc@example.com">Contact</a>
-         </li>
-      </ul>
+      <footer class="footer--background footer--wide">
+        <ul class="footer">
+          <li>
+            <img
+              class="change-color"
+              src="public/css/images/logo/output-onlinepngtools.png"
+              width="120"
+              alt=""
+            />
+          </li>
+          <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+          <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+          <li>Mentions Legale</li>
+          <li><a href="mailto: abc@example.com">Contact</a></li>
+        </ul>
       </footer>
+    </div>
   </body>
 </html>

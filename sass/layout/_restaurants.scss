@@ -12,7 +12,7 @@
       margin-bottom: 5%;
       border-radius: 1.25rem;
       list-style: none;
-      box-shadow: 0 0 0.8125rem rgb(34, 34, 34);
+      box-shadow: $zero $zero 0.8125rem rgb(34, 34, 34);
     }
   }
 }
@@ -21,7 +21,7 @@
   align-items: center;
 }
 .city--pad {
-  margin-top: 0;
+  margin-top: $zero;
   font-weight: lighter;
 }
 
@@ -31,15 +31,14 @@
 }
 .figure {
   position: relative;
-  margin: 0;
+  margin: $zero;
   .image {
-    width: $onepercent_width;
     object-fit: cover;
-    padding-right: 0px;
+    padding-right: $zero;
     border-top-right-radius: 1.25rem;
     border-top-left-radius: 1.25rem;
     height: 12.5rem;
-    width: 100%;
+    width: $onepercent_width;
   }
   .new {
     position: absolute;
@@ -59,7 +58,7 @@ ul.selection__restaurant {
     padding-left: 0;
   }
   .resto_map {
-    padding-left: 1rem;
+    padding: 1rem;
     width: 90%;
   }
 }

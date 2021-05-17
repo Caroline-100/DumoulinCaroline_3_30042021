@@ -11,8 +11,13 @@
     ></script>
   </head>
   <body>
+    <div class="heart">
+      <div class="heart-l"></div>
+      <div class="heart-r"></div>
+    </div>
+    <div class="body">
     <nav>
-      <a href="pageAcceuil.html">
+      <a class="nav__elemt--center" href="pageAcceuil.html">
         <i class="fas fa-arrow-left"></i>
       </a>
       <img src="public/css/images/logo/ohmyfood.png" alt="logo" width ="120px"/>
@@ -25,23 +30,34 @@
         alt="image principale assiette de presentation restaurants"
         />
       </figure>
-      
       <main>
       <section>
-        <div class="heading--over">
+        <header class="heading--over">
         <h1 class="heading">La note enchantée</h1>
         <div class="icon">
-          <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart">
+          <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart" >
             <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+            <defs>
+              <linearGradient id="MyGradient">
+                <stop offset="5%" stop-color="#9356DC" />
+                <stop offset="95%" stop-color="#ff79da" />
+              </linearGradient>
+            </defs>
           </svg>
           <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
             <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+            <defs>
+              <linearGradient id="MyGradient">
+                <stop offset="5%" stop-color="#9356DC" />
+                <stop offset="95%" stop-color="#ff79da" />
+              </linearGradient>
+            </defs>
           </svg>
         </div>
-      </div>
+      </header>
+      <h3 class="title--menu">Entrées</h3>
         <section class="menu">
-          <h3 class="title--menu">Entrées</h3>
-          <article class="animation_progressive bloc">
+          <article class="bloc animation_progressive ">
             <div class="choice-menu">
             <h4 class="title-plate">Ravioles de foie gras</h4>
             <p class="substitle_menu">Accompagnés de leur crème à la truffe</p>
@@ -53,7 +69,7 @@
               </div>
             </div>
           </article>
-          <article class="animation_progressive bloc">
+          <article class=" blocanimation_progressive">
             <div class="choice-menu">
             <h4 class="title-plate">Caviar osciètre </h4>
             <p class="substitle_menu">Sur blini à la farine de blé noir</p>
@@ -83,7 +99,7 @@
             <p class="substitle_menu">Confiture de figue et pain toasté</p>
           </div>
               <p class="slide_left">35€</p> 
-            </div>
+     
             <div class="bbox">
               <div class="price">
                 <i class= "fas fa-check"></i>
@@ -91,8 +107,8 @@
             </div>
           </article>
         </section>
+        <h3 class="title--menu">Plats</h3>
         <section class="menu">
-          <h3 class="title--menu">Plats</h3>
 
           <article class = "animation_progressive__plate bloc">
 
@@ -134,8 +150,8 @@
             </div>
           </article>
         </section>
+        <h3 class="title--menu">Desserts</h3>
         <section class="menu">
-          <h3 class="title--menu">Desserts</h3>
           <article class="animation_progressive__desserts bloc">
             <div class="choice-menu">
             <h4 class="title-plate">Macaron noisette et chocolat</h4>
@@ -197,5 +213,6 @@
         </li>
       </ul>
   </footer>
+</div> 
   </body>
 </html>

@@ -2,32 +2,29 @@
   width: $onepercent_width;
   input {
     border: none;
-    width: $onepercent_width;
+    &:focus {
+      outline: none;
+    }
+
     ::placeholder {
-      color: #020202;
+      color: $darkgrey;
     }
   }
 }
 i.fa-map-marker-alt {
-  // padding-left: 35%;
-  background-color:  #eaeaea;
-  display: flex;
-  align-content: center;
+  background-color: $lightgrey;
   opacity: 70%;
-  width: 10%;
-  margin-left: 40%;
 }
 .search--flex {
-  display: flex;
-  align-content: center;
+  text-align: center;
 }
 .search--background--opacity {
   opacity: 70%;
-  background-color:  #eaeaea;
+  background-color: $lightgrey;
 }
 .search--pad {
   padding: 0.625rem 0px 0.625rem;
 }
 .search__input--background--active {
-  background-color:  #eaeaea;
+  background-color: $lightgrey;
 }

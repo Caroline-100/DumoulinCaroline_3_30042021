@@ -11,8 +11,13 @@
     ></script>
   </head>
   <body>
+    <div class="heart">
+      <div class="heart-l"></div>
+      <div class="heart-r"></div>
+    </div>
+    <div class="body">
     <nav>
-      <a href="pageAcceuil.html">
+      <a class="nav__elemt--center" href="pageAcceuil.html">
         <i class="fas fa-arrow-left"></i>
       </a>
       <img src="public/css/images/logo/ohmyfood.png" alt="logo" width="120px" />
@@ -26,20 +31,33 @@
         />
       </figure>
     </section>
-    <section class="menu">
-      <div class="heading--over">
+      <header class="heading--over">
         <h1 class="heading">La palette du goût</h1>
         <div class="icon">
-          <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart">
+          <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart" >
             <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+            <defs>
+              <linearGradient id="MyGradient">
+                <stop offset="5%" stop-color="#9356DC" />
+                <stop offset="95%" stop-color="#ff79da" />
+              </linearGradient>
+            </defs>
           </svg>
           <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
             <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+            <defs>
+              <linearGradient id="MyGradient">
+                <stop offset="5%" stop-color="#9356DC" />
+                <stop offset="95%" stop-color="#ff79da" />
+              </linearGradient>
+            </defs>
           </svg>
         </div>
-      </div>
-      <section class="menu">
+      </header>
+      <header>
         <h3 class="title--menu">Entrées</h3>
+      </header>
+      <section class="menu">
         <article class="bloc animation_progressive">
           <div class="choice-menu">
           <h4 class="title-plate">Fricassée d'escargot</h4>
@@ -82,8 +100,8 @@
           </div>
         </article>
       </section>
+      <h3 class="title--menu">Plats</h3>
       <section class="menu">
-        <h3 class="title--menu">Plats</h3>
         <article class="bloc animation_progressive__plate">
           <div class="choice-menu">
           <h4 class="title-plate">Filet de boeuf aux herbes</h4>
@@ -129,9 +147,8 @@
           </div>
         </article>
       </section>
+      <h3 class="title--menu">Desserts</h3>
       <section class="menu">
-        <h3 class="title--menu">Desserts</h3>
-
         <article class="bloc animation_progressive__desserts">
           <div class="choice-menu">
           <h4 class="title-plate">Paris-Brest</h4>
@@ -197,5 +214,6 @@
         </li>
       </ul>
     </footer>
+  </div>
   </body>
 </html>
