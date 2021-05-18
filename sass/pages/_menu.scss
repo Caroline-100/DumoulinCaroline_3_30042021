@@ -34,6 +34,11 @@ section.menu {
     }
   }
 }
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 .slide_left {
   transition: 1000ms ease-out;
   padding: 0.5em;

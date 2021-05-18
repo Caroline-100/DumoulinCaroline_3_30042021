@@ -1,11 +1,14 @@
 //explaination
-i.fas.fa-mobile-alt {
+i.fas.fa-mobile-alt, i.fas.fa-store
+, i.fas.fa-list {
   width: 0px;
   font-size: large;
+
 }
 .functionality {
   &--flex {
     @include f_col_center;
+
     &__list {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -42,6 +45,7 @@ i.fas.fa-mobile-alt {
 }
 .functionality__list--rounded > li {
   border-radius: 1.25rem;
+  
 }
 .functionality__list > li:hover {
   background-color: #9256dc71;

@@ -8,8 +8,8 @@
   bottom:50%;
   left:50%;
   transform: rotate(45deg);
-  animation: loader 2s, beat 2s infinite;
-  animation-delay: 2.5s;
+  animation: beat 200ms infinite, loader 600ms;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 1;
 }
