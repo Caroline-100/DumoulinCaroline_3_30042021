@@ -14,7 +14,12 @@ body {
 @media screen and (min-width: 600px) {
   .menu {
     justify-content: space-around;
+    flex-direction: column;
     display: flex;
+  }
+  .menu div {
+    display: flex;
+    flex-direction: row;
   }
   .menu article {
     width: 33%;
@@ -48,14 +53,15 @@ li > .fas.fa-hands-helping {
 
   #width-query {
     display: flex;
-    justify-content: center;
-    margin-left: 2rem;
+    justify-content: start;
+    margin-left: 0;
+    padding: 0;
   }
   #width-query > li:nth-child(1),
 #width-query > li:nth-child(2),
 #width-query li:nth-child(3) {
     width: 25%;
-    margin-left: 3rem;
+    margin-left: 2.7rem;
   }
   #width-query > li:nth-child(1) .number,
 #width-query > li:nth-child(2) .number,
@@ -81,6 +87,21 @@ li > .fas.fa-hands-helping {
     bottom: 50%;
     left: 50%;
     background-color: red;
+  }
+}
+@media screen and (min-width: 768px) {
+  #width-query {
+    margin-left: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #width-query {
+    margin-left: 6em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #width-query {
+    margin-left: 9em;
   }
 }
 @keyframes color-my-box {
@@ -316,8 +337,7 @@ h3.reservation__title {
   padding: 0;
 }
 .prev__menu__restaurants .selection__restaurant > li {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 1em;
   border-radius: 1.25rem;
   list-style: none;
   box-shadow: 0 0 0.8125rem #222222;
@@ -401,7 +421,8 @@ footer .footer li > a {
   padding-right: 1em;
 }
 
-i.fas.fa-mobile-alt {
+i.fas.fa-mobile-alt, i.fas.fa-store,
+i.fas.fa-list {
   width: 0px;
   font-size: large;
 }
@@ -572,8 +593,8 @@ i.fas.fa-mobile-alt {
   bottom: 50%;
   left: 50%;
   transform: rotate(45deg);
-  animation: loader 2s, beat 2s infinite;
-  animation-delay: 2.5s;
+  animation: beat 200ms infinite, loader 600ms;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 1;
 }
@@ -642,6 +663,12 @@ section.menu article .choice-menu {
   width: 100%;
   padding: 0.5em;
   flex-direction: column;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .slide_left {
