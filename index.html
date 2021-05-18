@@ -17,14 +17,14 @@
     </div>
     <div class="body">
     <nav class="nav nav_accueil nav--flex nav--width">
-      <img class="nav__picture" src="public/css/images/logo/ohmyfood.png" alt="logo" width ="120px" />
+      <img class="nav__picture" src="public/css/images/logo/ohmyfood.png" alt="logo" width ="120" />
     </nav>
     <main>
       <section class="search search--flex search--background--opacity search--pad">
+        <h2 class="hidden">Controls</h2>
         <i class="fas fa-map-marker-alt"></i> <!-- class = "search__map_logo"  -->
-        <input class="search__input search__input--background--active" type="text" placeholder="Paris, Belleville" name="" id="" />
+        <input class="search__input search__input--background--active" type="text" placeholder="Paris, Belleville" />
       </section>
-
       <section class="reservation reservation--flex reservation--shadow reservation--background ">
         <h1 class="reservation__title">Réservez le menu qui  vous convient</h1>
         <h3 class="reservation__subtitle">
@@ -61,7 +61,7 @@
         </ul>
       </section>
       <section class="prev__menu__restaurants">
-          <!-- <h3 class="prev__menu__restaurants__heading prev__menu__restaurants__heading--flex">Restaurants</h3> -->
+          <h3 class="prev__menu__restaurants__heading prev__menu__restaurants__heading--flex">Restaurants</h3>
         <ul class="selection__restaurant">
           <li class ="tew">
             <a href="La_palette_du_gout.html">
@@ -79,23 +79,17 @@
                       <p class="city--pad">Ménilmontant</p>
                     </div>
                     <div class="icon">
-                      <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart" >
+                      <svg class="heart-main" viewBox="0 0 512 512" width="20" >
                         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                         <defs>
-                          <linearGradient id="MyGradient">
+                          <linearGradient class="MyGradient">
                             <stop offset="5%" stop-color="#9356DC" />
                             <stop offset="95%" stop-color="#ff79da" />
                           </linearGradient>
                         </defs>
                       </svg>
-                      <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
+                      <svg class="heart-background" viewBox="0 0 512 512" width="20">
                         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                        <defs>
-                          <linearGradient id="MyGradient">
-                            <stop offset="5%" stop-color="#9356DC" />
-                            <stop offset="95%" stop-color="#ff79da" />
-                          </linearGradient>
-                        </defs>
                       </svg>
                     </div>
                   </div>
@@ -119,23 +113,17 @@
                 <p class="city--pad">Charonne</p>
               </div>
               <div class="icon">
-                <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart" >
+                <svg class="heart-main" viewBox="0 0 512 512" width="20">
                   <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                   <defs>
-                    <linearGradient id="MyGradient">
+                    <linearGradient class="MyGradient">
                       <stop offset="5%" stop-color="#9356DC" />
                       <stop offset="95%" stop-color="#ff79da" />
                     </linearGradient>
                   </defs>
                 </svg>
-                <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
+                <svg class="heart-background" viewBox="0 0 512 512" width="20">
                   <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                  <defs>
-                    <linearGradient id="MyGradient">
-                      <stop offset="5%" stop-color="#9356DC" />
-                      <stop offset="95%" stop-color="#ff79da" />
-                    </linearGradient>
-                  </defs>
                 </svg>
               </div>
             </div>
@@ -159,24 +147,19 @@
                       <p class="city--pad">Cité Rouge</p>
                     </div> 
                     <div class="icon">
-                      <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart" >
+                      <svg class="heart-main" viewBox="0 0 512 512" width="20">
                         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                         <defs>
-                          <linearGradient id="MyGradient">
+                          <linearGradient class="MyGradient">
                             <stop offset="5%" stop-color="#9356DC" />
                             <stop offset="95%" stop-color="#ff79da" />
                           </linearGradient>
                         </defs>
                       </svg>
-                      <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
+                      <svg class="heart-background" viewBox="0 0 512 512" width="20">
                         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                        <defs>
-                          <linearGradient id="MyGradient">
-                            <stop offset="5%" stop-color="#9356DC" />
-                            <stop offset="95%" stop-color="#ff79da" />
-                          </linearGradient>
-                        </defs>
                       </svg>
+                    </div>
                     </div>
                 </figcaption>
               </figure>
@@ -197,23 +180,17 @@
                   <p class="city--pad">Folie-Méricourt</p>
                 </div>
                 <div class="icon">
-                  <svg class="heart-main" viewBox="0 0 512 512" width="20" title="heart" >
+                  <svg class="heart-main" viewBox="0 0 512 512" width="20" >
                     <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                     <defs>
-                      <linearGradient id="MyGradient">
+                      <linearGradient class="MyGradient">
                         <stop offset="5%" stop-color="#9356DC" />
                         <stop offset="95%" stop-color="#ff79da" />
                       </linearGradient>
                     </defs>
                   </svg>
-                  <svg class="heart-background" viewBox="0 0 512 512" width="20" title="heart">
+                  <svg class="heart-background" viewBox="0 0 512 512" width="20" >
                     <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                    <defs>
-                      <linearGradient id="MyGradient">
-                        <stop offset="5%" stop-color="#9356DC" />
-                        <stop offset="95%" stop-color="#ff79da" />
-                      </linearGradient>
-                    </defs>
                   </svg>
                 </div>
               </div>
@@ -237,8 +214,8 @@
       <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
       <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
       <li>Mentions Legale</li>
-      <li><a href = "mailto: abc@example.com">Contact</a>
-      </li>
+      <li><a href="mailto:a&#98;%63&#64;&#101;xam&#112;l%65%2eco%6d">
+        Contact</a></li>
     </ul>
   </footer>
   </div>
