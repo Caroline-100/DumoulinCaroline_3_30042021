@@ -1,13 +1,12 @@
 //explaination
-i.fas.fa-mobile-alt, i.fas.fa-store
-, i.fas.fa-list {
+i.fas.fa-mobile-alt,
+i.fas.fa-store,
+i.fas.fa-list {
   width: 0px;
   font-size: large;
-
 }
 .functionality {
   &--flex {
-    @include f_col_center;
 
     &__list {
       padding-left: 1rem;
@@ -15,11 +14,18 @@ i.fas.fa-mobile-alt, i.fas.fa-store
     }
   }
 }
+li#functionality__color {
+  background-color: #9256dc21;
+  i {
+    color:$purple;
+  }
+}
 .functionality__list > li {
   width: 90%;
   i {
     margin: 22px;
     transition: all 500ms;
+    color: grey;
   }
   p {
     width: $onepercent_width;
@@ -28,12 +34,13 @@ i.fas.fa-mobile-alt, i.fas.fa-store
     transition: all 500ms;
   }
 }
+
 .functionality__list--flex > li {
-@include elemt_center;
+  @include elemt_center;
   background-color: $lightgrey;
 }
 .functionality__list--wide > li {
-  width: 90%;
+  width: clamp (100px, 50%, 200px);
 }
 .functionality__list--margin > li {
   margin-left: $zero;
@@ -41,16 +48,19 @@ i.fas.fa-mobile-alt, i.fas.fa-store
 }
 .functionality__list--border > li {
   border-left-width: $zero;
-  border: 1px solid grey;
+  border: 1px solid $lightgrey;
 }
 .functionality__list--rounded > li {
   border-radius: 1.25rem;
-  
+  li.zero_margin {
+    margin: 0;
+  }
+
 }
 .functionality__list > li:hover {
   background-color: #9256dc71;
   i {
-    color: #9256dccc;
+    color: $purple;
     transition-delay: 500ms;
     box-shadow: 2px 6px 5px -2px #9256dc00;
   }

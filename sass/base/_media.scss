@@ -35,25 +35,29 @@
   button.reservation__btn--margin {
     margin: 2%;
   }
-  .functionality__title {
-    display: flex;
-    justify-content: center;
-  }
+
   #width-query {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    align-items: center;
     margin-left: 0;
     padding: 0;
 
     > li:nth-child(1),
     > li:nth-child(2),
     li:nth-child(3) {
-      width: 25%;
-      margin-left: 2.7rem;
+      width: 50%;
+      // margin-right: 2.7rem;
       .number {
         position: static;
         margin-left: -15px;
-        width: 4%;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        /* padding: 0.1em; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -80,9 +84,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  #width-query {
-    margin-left: 5em;
-  }
+
   nav {
     .center_media {
       margin-left: 12em;
@@ -91,9 +93,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  #width-query {
-    margin-left: 6em;
-  }
+
   nav {
     .center_media {
       margin-left: 22em;
@@ -102,9 +102,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  #width-query {
-    margin-left: 9em;
-  }
   nav {
     .center_media {
       margin-left: 35em;

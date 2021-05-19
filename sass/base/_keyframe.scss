@@ -114,7 +114,10 @@
     transform: scale(1);
   }
   80% {
-    fill: url(#MyGradient);
+    fill: url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
+    fill: url(#aa);
     transform: scale(1.1);
   }
   90% {
@@ -122,16 +125,25 @@
   }
   100% {
     stroke-dashoffset: 3100;
-    fill: url(#MyGradient);
+    fill: url(#aa);
+    fill:url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
   }
 }
 @keyframes fade-animation {
   70% {
-    fill: url(#MyGradient);
+    fill: url(#aa);
+    fill:url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
     transform: scale(1);
   }
   80% {
-    fill: url(#MyGradient);
+    fill: url(#aa);
+    fill:url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
     transform: scale(1.1);
     opacity: 1;
   }

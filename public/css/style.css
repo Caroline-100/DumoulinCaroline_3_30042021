@@ -52,29 +52,30 @@ li > .fas.fa-hands-helping {
     margin: 2%;
   }
 
-  .functionality__title {
-    display: flex;
-    justify-content: center;
-  }
-
   #width-query {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    align-items: center;
     margin-left: 0;
     padding: 0;
   }
   #width-query > li:nth-child(1),
 #width-query > li:nth-child(2),
 #width-query li:nth-child(3) {
-    width: 25%;
-    margin-left: 2.7rem;
+    width: 50%;
   }
   #width-query > li:nth-child(1) .number,
 #width-query > li:nth-child(2) .number,
 #width-query li:nth-child(3) .number {
     position: static;
     margin-left: -15px;
-    width: 4%;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    /* padding: 0.1em; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer--background .footer {
@@ -99,30 +100,18 @@ li > .fas.fa-hands-helping {
   }
 }
 @media screen and (min-width: 768px) {
-  #width-query {
-    margin-left: 5em;
-  }
-
   nav .center_media {
     margin-left: 12em;
     width: 15.25rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  #width-query {
-    margin-left: 6em;
-  }
-
   nav .center_media {
     margin-left: 22em;
     display: flex;
   }
 }
 @media screen and (min-width: 1440px) {
-  #width-query {
-    margin-left: 9em;
-  }
-
   nav .center_media {
     margin-left: 35em;
   }
@@ -238,7 +227,10 @@ li > .fas.fa-hands-helping {
     transform: scale(1);
   }
   80% {
-    fill: url(#MyGradient);
+    fill: url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
+    fill: url(#aa);
     transform: scale(1.1);
   }
   90% {
@@ -246,16 +238,25 @@ li > .fas.fa-hands-helping {
   }
   100% {
     stroke-dashoffset: 3100;
-    fill: url(#MyGradient);
+    fill: url(#aa);
+    fill: url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
   }
 }
 @keyframes fade-animation {
   70% {
-    fill: url(#MyGradient);
+    fill: url(#aa);
+    fill: url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
     transform: scale(1);
   }
   80% {
-    fill: url(#MyGradient);
+    fill: url(#aa);
+    fill: url(#Mygradient);
+    fill: url(#Mygradientt);
+    fill: url(#gradient);
     transform: scale(1.1);
     opacity: 1;
   }
@@ -283,7 +284,7 @@ nav a {
 
 .nav__elemt--center {
   width: auto;
-  margin-right: 2em;
+  margin-right: 2.5em;
 }
 
 .nav_accueil {
@@ -446,20 +447,23 @@ footer .footer li > a {
   padding-right: 1em;
 }
 
-i.fas.fa-mobile-alt, i.fas.fa-store,
+i.fas.fa-mobile-alt,
+i.fas.fa-store,
 i.fas.fa-list {
   width: 0px;
   font-size: large;
 }
 
-.functionality--flex {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-}
 .functionality--flex__list {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+li#functionality__color {
+  background-color: #9256dc21;
+}
+li#functionality__color i {
+  color: #9356dc;
 }
 
 .functionality__list > li {
@@ -468,6 +472,7 @@ i.fas.fa-list {
 .functionality__list > li i {
   margin: 22px;
   transition: all 500ms;
+  color: grey;
 }
 .functionality__list > li p {
   width: 100%;
@@ -484,7 +489,7 @@ i.fas.fa-list {
 }
 
 .functionality__list--wide > li {
-  width: 90%;
+  width: clamp 100px, 50%, 200px;
 }
 
 .functionality__list--margin > li {
@@ -494,18 +499,21 @@ i.fas.fa-list {
 
 .functionality__list--border > li {
   border-left-width: 0;
-  border: 1px solid grey;
+  border: 1px solid #eaeaea;
 }
 
 .functionality__list--rounded > li {
   border-radius: 1.25rem;
+}
+.functionality__list--rounded > li li.zero_margin {
+  margin: 0;
 }
 
 .functionality__list > li:hover {
   background-color: #9256dc71;
 }
 .functionality__list > li:hover i {
-  color: #9256dccc;
+  color: #9356dc;
   transition-delay: 500ms;
   box-shadow: 2px 6px 5px -2px #9256dc00;
 }
