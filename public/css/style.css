@@ -8,9 +8,15 @@ body {
 }
 
 .body {
-  animation: body 7s;
+  animation: body 1s;
 }
 
+@media screen and (min-width: 375px) {
+  .center_media {
+    margin-left: 2em;
+    width: 12.25rem;
+  }
+}
 @media screen and (min-width: 600px) {
   .menu {
     justify-content: space-around;
@@ -86,22 +92,39 @@ li > .fas.fa-hands-helping {
     right: 50%;
     bottom: 50%;
     left: 50%;
-    background-color: red;
+  }
+
+  nav .center_media {
+    margin-left: 12em;
   }
 }
 @media screen and (min-width: 768px) {
   #width-query {
-    margin-left: 2em;
+    margin-left: 5em;
+  }
+
+  nav .center_media {
+    margin-left: 12em;
+    width: 15.25rem;
   }
 }
 @media screen and (min-width: 1024px) {
   #width-query {
     margin-left: 6em;
   }
+
+  nav .center_media {
+    margin-left: 22em;
+    display: flex;
+  }
 }
 @media screen and (min-width: 1440px) {
   #width-query {
     margin-left: 9em;
+  }
+
+  nav .center_media {
+    margin-left: 35em;
   }
 }
 @keyframes color-my-box {
@@ -246,7 +269,6 @@ li > .fas.fa-hands-helping {
 }
 nav {
   display: flex;
-  justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 2px #eaeaea;
 }
@@ -254,6 +276,9 @@ nav img {
   width: 10.25rem;
   padding-bottom: 0.625rem;
   padding-top: 0.625rem;
+}
+nav a {
+  margin-left: 1em;
 }
 
 .nav__elemt--center {
@@ -494,8 +519,7 @@ i.fas.fa-list {
 
 .btn,
 .reservation__btn {
-  border: 1px solid #9356dc;
-  background: #9356dc;
+  border: 1px solid #ff79da;
   background: radial-gradient(circle, #9356dc 0%, #ff79da 100%);
   color: #fffff0;
   border-radius: 1.25rem;
@@ -545,7 +569,7 @@ i.fas.fa-list {
 .fas.fa-check {
   color: #99e2d0;
   border-radius: 1em;
-  border: solid #ffffff 0.2em;
+  border: solid 0.2em;
   background-color: #ffffff;
 }
 
@@ -593,8 +617,7 @@ i.fas.fa-list {
   bottom: 50%;
   left: 50%;
   transform: rotate(45deg);
-  animation: beat 200ms infinite, loader 600ms;
-  animation-delay: 0.5s;
+  animation: beat 400ms infinite, loader 900ms;
   animation-fill-mode: both;
   z-index: 1;
 }
@@ -674,6 +697,7 @@ section.menu article .choice-menu {
 .slide_left {
   transition: 1000ms ease-out;
   padding: 0.5em;
+  margin-bottom: 0.3em;
   height: auto;
   justify-content: flex-end;
   display: flex;
@@ -710,6 +734,7 @@ section.menu article .choice-menu {
   padding-left: 0.5em;
   white-space: nowrap;
   margin-top: 0;
+  margin-bottom: 0.3em;
 }
 
 .price {
@@ -738,7 +763,8 @@ header.heading--over {
   font-family: Shrikhand;
 }
 header.heading--over .heading {
-  width: 50%;
+  width: 100%;
+  margin-left: 0.5em;
 }
 
 .title--menu {

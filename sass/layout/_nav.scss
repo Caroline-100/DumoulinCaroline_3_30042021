@@ -1,10 +1,16 @@
 nav {
-  @include elemt_center;
+  display: flex;
+  align-items: center;
+
   box-shadow: 2px 2px 2px $lightgrey;
   img {
     width: 10.25rem;
     padding-bottom: 0.625rem;
     padding-top: 0.625rem;
+   
+  }
+  a {
+    margin-left :1em;
   }
 }
 .nav__elemt--center {

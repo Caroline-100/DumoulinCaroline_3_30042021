@@ -42,6 +42,7 @@ section.menu {
 .slide_left {
   transition: 1000ms ease-out;
   padding: 0.5em;
+  margin-bottom: 0.3em;
   height: auto;
   justify-content: flex-end;
   display: flex;
@@ -78,6 +79,7 @@ section.menu {
   padding-left: 0.5em;
   white-space: nowrap;
   margin-top: $zero;
+  margin-bottom: 0.3em;
 }
 .price {
   display: flex;
@@ -91,21 +93,22 @@ section.menu {
 
 header.heading--over {
   margin-top: -2em;
-@include elemt_center;
+  @include elemt_center;
   flex-direction: row;
   position: relative;
   border-radius: 25px;
-  background-color: $softgrey ;
+  background-color: $softgrey;
   font-style: italic;
   font-weight: bolder;
   font-size: 22px;
   font-family: Shrikhand;
   .heading {
-    width: 50%;
+    width: 100%;
+    margin-left: 0.5em;
   }
 }
 .title--menu {
-  padding: $one $one 0.5em $zero ;
+  padding: $one $one 0.5em $zero;
   margin: $zero $zero $one $one;
   width: 2em;
   border-bottom: 0.2em solid $bluesky;
