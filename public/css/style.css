@@ -107,7 +107,7 @@ li > .fas.fa-hands-helping {
 }
 @media screen and (min-width: 1024px) {
   nav .center_media {
-    margin-left: 22em;
+    margin-left: 32em;
     display: flex;
   }
 }
@@ -510,7 +510,7 @@ li#functionality__color i {
 }
 
 .functionality__list > li:hover {
-  background-color: #9256dc71;
+  background-color: #9256dc21;
 }
 .functionality__list > li:hover i {
   color: #9356dc;
@@ -540,13 +540,12 @@ li#functionality__color i {
   transition: all 500ms;
 }
 
-.btn:active,
-.reservation__btn:active {
+.btn:hover,
+.reservation__btn:hover {
   transform: scale(1.01);
-  box-shadow: 2px 2px 2px #91969196;
+  box-shadow: 9px 12px 11px #91969196;
   transition: all 500ms;
   animation: transform 1s;
-  color: #c9c1c8;
 }
 
 .reservation__btn--margin,
@@ -579,6 +578,7 @@ li#functionality__color i {
   border-radius: 1em;
   border: solid 0.2em;
   background-color: #ffffff;
+  font-size: large;
 }
 
 .bloc:hover .fas.fa-check {
@@ -588,7 +588,7 @@ li#functionality__color i {
 
 .icon {
   fill: transparent;
-  stroke: #f06292;
+  stroke: grey;
   stroke-width: 1em;
   position: relative;
   padding: 2em;

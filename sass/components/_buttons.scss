@@ -7,13 +7,13 @@
   transition: all 500ms;
 }
 
-.btn:active,
-.reservation__btn:active {
+.btn:hover,
+.reservation__btn:hover {
   transform: scale(1.01);
-  box-shadow: 2px 2px 2px #91969196;
+  box-shadow: 9px 12px 11px #91969196;
   transition: all 500ms;
   animation: transform 1s;
-  color: rgb(201, 193, 200);
+  // color: rgb(201, 193, 200);
 }
 .reservation__btn--margin,
 #command {
@@ -42,6 +42,7 @@
   border-radius: $one;
   border: solid 0.2em;
   background-color: $white;
+  font-size: large;
 }
 .bloc:hover {
   .fas.fa-check {
@@ -51,7 +52,7 @@
 }
 .icon {
   fill: transparent;
-  stroke: $grey;
+  stroke: grey;
   stroke-width: $one;
   position: relative;
   padding: 2em;
