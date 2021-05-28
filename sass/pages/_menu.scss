@@ -77,6 +77,8 @@ section.menu {
   transition: 500ms all;
   padding-top: 0.1em;
   padding-left: 0.5em;
+  font-size: 0.8em;
+  font-weight: lighter;
   white-space: nowrap;
   margin-top: $zero;
   margin-bottom: 0.3em;
@@ -105,6 +107,7 @@ header.heading--over {
   .heading {
     width: 100%;
     margin-left: 0.5em;
+    font-size: 1.3em;
   }
 }
 .title--menu {

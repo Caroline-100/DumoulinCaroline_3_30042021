@@ -5,13 +5,15 @@
   background-color: #f6f6f6;
 }
 .reservation--flex {
-
   text-align: center;
 }
 .reservation__subtitle {
   text-align: center;
-  font-size: 19px;
+  font-size: 1em;
   margin-top: 0;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  font-weight: lighter;
 }
 h3.reservation__title {
   font-size: 25px;

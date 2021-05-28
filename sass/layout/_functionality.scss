@@ -7,7 +7,6 @@ i.fas.fa-list {
 }
 .functionality {
   &--flex {
-
     &__list {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -17,7 +16,7 @@ i.fas.fa-list {
 li#functionality__color {
   background-color: #9256dc21;
   i {
-    color:$purple;
+    color: $purple;
   }
 }
 .functionality__list > li {
@@ -37,14 +36,18 @@ li#functionality__color {
 
 .functionality__list--flex > li {
   @include elemt_center;
-  background-color: $lightgrey;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 9px 1px #aeaeae;
+  -webkit-box-shadow: 0px 4px 9px 1px #aeaeae; 
+  -moz-box-shadow: 0px 4px 9px 1px#aeaeae;
 }
 .functionality__list--wide > li {
   width: clamp (100px, 50%, 200px);
 }
 .functionality__list--margin > li {
   margin-left: $zero;
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.5rem;
+
 }
 .functionality__list--border > li {
   border-left-width: $zero;
@@ -55,7 +58,6 @@ li#functionality__color {
   li.zero_margin {
     margin: 0;
   }
-
 }
 .functionality__list > li:hover {
   background-color: #9256dc21;
@@ -69,5 +71,6 @@ li#functionality__color {
   }
 }
 .functionality__title {
-  text-align: center;
+  text-align: left;
+  margin: 1em;
 }

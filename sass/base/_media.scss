@@ -84,16 +84,23 @@
   }
 }
 @media screen and (min-width: 768px) {
-
   nav {
     .center_media {
       margin-left: 12em;
       width: 15.25rem;
     }
   }
+  .prev__menu__restaurants__heading--flex {
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+  }
+  .functionality__title {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1024px) {
-
   nav {
     .center_media {
       margin-left: 32em;

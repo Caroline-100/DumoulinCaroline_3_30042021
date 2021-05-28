@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  background-color: #f6f6f6;
 }
 
 .body {
@@ -103,6 +102,17 @@ li > .fas.fa-hands-helping {
   nav .center_media {
     margin-left: 12em;
     width: 15.25rem;
+  }
+
+  .prev__menu__restaurants__heading--flex {
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .functionality__title {
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -326,6 +336,12 @@ i.fa-map-marker-alt {
   background-color: #eaeaea;
 }
 
+.reservation__title {
+  font-size: 1.3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 .reservation--shadow {
   box-shadow: inset 6px -3px 2px #f6f6f6;
 }
@@ -340,8 +356,11 @@ i.fa-map-marker-alt {
 
 .reservation__subtitle {
   text-align: center;
-  font-size: 19px;
+  font-size: 1em;
   margin-top: 0;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  font-weight: lighter;
 }
 
 h3.reservation__title {
@@ -350,12 +369,14 @@ h3.reservation__title {
 
 .prev__menu__restaurants__heading--flex {
   display: flex;
-  justify-content: center;
+  text-align: left;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  padding-left: 1em;
 }
 
 .prev__menu__restaurants {
   flex-direction: column;
-  align-items: center;
   display: flex;
   background-color: #f6f6f6;
 }
@@ -363,8 +384,9 @@ h3.reservation__title {
   padding: 0;
 }
 .prev__menu__restaurants .selection__restaurant > li {
-  margin: 1em;
+  margin-bottom: 1.7em;
   border-radius: 1.25rem;
+  margin-right: 0.3em;
   list-style: none;
   box-shadow: 0 0 0.8125rem #222222;
 }
@@ -393,12 +415,12 @@ h3.reservation__title {
   padding-right: 0;
   border-top-right-radius: 1.25rem;
   border-top-left-radius: 1.25rem;
-  height: 12.5rem;
+  height: 10rem;
   width: 100%;
 }
 .figure .new {
   position: absolute;
-  padding: 1rem;
+  padding: 0.5em;
   border-radius: 0.25rem;
   color: darkgreen;
   font-weight: bold;
@@ -408,14 +430,21 @@ h3.reservation__title {
 
 ul.selection__restaurant {
   width: 90%;
+  margin: 0 auto;
 }
 ul.selection__restaurant a {
   background-color: darkgray;
   padding-left: 0;
 }
 ul.selection__restaurant .resto_map {
-  padding: 1rem;
-  width: 90%;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.name_resto--marge {
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  font-weight: bold;
 }
 
 footer {
@@ -423,7 +452,7 @@ footer {
 }
 footer .footer {
   margin: 0;
-  padding: 1em;
+  padding: 1.2em;
   background-color: #353535;
   list-style: none;
   display: flex;
@@ -445,6 +474,15 @@ footer .footer li > a {
 .fas.fa-hands-helping {
   width: 1em;
   padding-right: 1em;
+}
+
+footer .change-color {
+  padding-bottom: 1.2em;
+  padding-top: 1em;
+}
+
+footer .pad {
+  padding: 0.3em;
 }
 
 i.fas.fa-mobile-alt,
@@ -485,7 +523,10 @@ li#functionality__color i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eaeaea;
+  background-color: #F6F6F6;
+  box-shadow: 0px 4px 9px 1px #aeaeae;
+  -webkit-box-shadow: 0px 4px 9px 1px #aeaeae;
+  -moz-box-shadow: 0px 4px 9px 1px #aeaeae;
 }
 
 .functionality__list--wide > li {
@@ -494,7 +535,7 @@ li#functionality__color i {
 
 .functionality__list--margin > li {
   margin-left: 0;
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.5rem;
 }
 
 .functionality__list--border > li {
@@ -522,7 +563,8 @@ li#functionality__color i {
 }
 
 .functionality__title {
-  text-align: center;
+  text-align: left;
+  margin: 1em;
 }
 
 .btn,
@@ -534,10 +576,11 @@ li#functionality__color i {
   font-weight: 600;
   padding: 0.625rem;
   box-shadow: 1px 3px 3px 3px #5f537273;
-  width: 50%;
   transform: scale(1);
   animation: transform 1s;
   transition: all 500ms;
+  font-weight: bold;
+  padding: 1em 2em 1em 2em;
 }
 
 .btn:hover,
@@ -550,7 +593,8 @@ li#functionality__color i {
 
 .reservation__btn--margin,
 #command {
-  margin: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #command {
@@ -591,7 +635,7 @@ li#functionality__color i {
   stroke: grey;
   stroke-width: 1em;
   position: relative;
-  padding: 2em;
+  padding: 1em;
 }
 .icon svg {
   overflow: visible;
@@ -661,6 +705,7 @@ section.menu article {
   box-shadow: 1px 1px 8px 1px #bababa;
   background-color: #ffffff;
   transform: scale(1);
+  font-size: 1em;
   overflow: hidden;
   display: flex;
 }
@@ -740,6 +785,8 @@ section.menu article .choice-menu {
   transition: 500ms all;
   padding-top: 0.1em;
   padding-left: 0.5em;
+  font-size: 0.8em;
+  font-weight: lighter;
   white-space: nowrap;
   margin-top: 0;
   margin-bottom: 0.3em;
@@ -773,6 +820,7 @@ header.heading--over {
 header.heading--over .heading {
   width: 100%;
   margin-left: 0.5em;
+  font-size: 1.3em;
 }
 
 .title--menu {

@@ -1,15 +1,21 @@
 .prev__menu__restaurants__heading--flex {
   display: flex;
-  justify-content: center;
+  text-align: left;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  padding-left: 1em;
 }
 .prev__menu__restaurants {
-  @include f_col_center;
+  flex-direction: column;
+
+  display: flex;
   background-color: #f6f6f6;
   .selection__restaurant {
     padding: 0;
     > li {
-      margin: 1em;
+      margin-bottom: 1.7em;
       border-radius: 1.25rem;
+      margin-right: 0.3em;
       list-style: none;
       box-shadow: $zero $zero 0.8125rem rgb(34, 34, 34);
     }
@@ -36,12 +42,12 @@
     padding-right: $zero;
     border-top-right-radius: 1.25rem;
     border-top-left-radius: 1.25rem;
-    height: 12.5rem;
+    height: 10rem;
     width: $onepercent_width;
   }
   .new {
     position: absolute;
-    padding: 1rem;
+    padding: 0.5em;
     border-radius: 0.25rem;
     color: darkgreen;
     font-weight: bold;
@@ -52,12 +58,18 @@
 
 ul.selection__restaurant {
   width: 90%;
+  margin: 0 auto;
   a {
     background-color: darkgray;
     padding-left: 0;
   }
   .resto_map {
-    padding: 1rem;
-    width: 90%;
+    padding-left: 1rem;
+    width: 100%;
   }
+}
+.name_resto--marge {
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  font-weight: bold;
 }
