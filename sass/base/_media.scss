@@ -99,19 +99,33 @@
     display: flex;
     justify-content: center;
   }
+  .nav__picture {
+    width: 20rem;
+  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   nav {
     .center_media {
-      margin-left: 32em;
+      margin-left: 19rem;
       display: flex;
     }
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1439px) {
   nav {
     .center_media {
-      margin-left: 35em;
+      margin-left: 25em;
+    }
+    .nav__picture {
+      width: 24rem;
+    }
+  }
+}
+@media screen and (min-width: 2559px) {
+  nav {
+    img.center_media {
+      margin-left: 56rem;
+      width: 34rem;
     }
   }
 }

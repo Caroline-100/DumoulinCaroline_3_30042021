@@ -12,6 +12,7 @@
 .btn:hover,
 .reservation__btn:hover {
   transform: scale(1.01);
+  filter: brightness(1.1);
   box-shadow: 9px 12px 11px #91969196;
   transition: all 500ms;
   animation: transform 1s;
@@ -59,26 +60,31 @@
   stroke-width: $one;
   position: relative;
   padding: 1em;
+  cursor: pointer;
   svg {
     overflow: visible;
   }
   path {
+    //where the stroke path start
     stroke-dashoffset: $zero;
+    // array
     stroke-dasharray: 1550;
+    // permet de definir le point d origine d une transformation
     transform-origin: center;
   }
+  // superposition 2 elements
   .heart-background {
     position: absolute;
     left: $zero;
     right: $zero;
-    z-index: -1;
+    z-index: -1; // postion in oder -1 permet de reduire la priority
     stroke: none;
   }
   // animation
   .heart-main:hover path {
-    animation: stroke-animation 2s ease-in-out forwards;
+    animation: stroke-animation 1s ease-in-out forwards;
   }
   .heart-main:hover ~ .heart-background path {
-    animation: fade-animation 2s ease-in-out forwards;
+    animation: spread_and_fade 2s ease-in-out forwards;
   }
 }

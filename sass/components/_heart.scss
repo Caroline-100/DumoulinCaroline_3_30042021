@@ -1,14 +1,14 @@
 .heart {
   position: absolute;
-  background: rgb(147,86,220);
-  background: linear-gradient(90deg, rgba(147,86,220,1) 48%, rgba(209,94,171,1) 73%, rgba(153,226,208,1) 93%);
-  height: 70px;
   top:50%;
   right:50%;
   bottom:50%;
   left:50%;
+  background: rgb(147,86,220);
+  background: linear-gradient(100deg, rgba(147,86,220,10) 15%, rgba(153,226,208,10) 100%, rgba(209,94,171,10) 40%);
+  height: 70px;
   transform: rotate(45deg);
-  animation: beat 400ms infinite, loader 900ms;
+  animation: beat 500ms infinite, loader 1000ms;
   // animation-delay: 1500ms;
   animation-fill-mode: both;
   z-index: 1;
@@ -22,7 +22,7 @@
 .heart-r {
   height: 40px;
   background: rgb(147,86,220);
-  background: linear-gradient(90deg, rgba(147,86,220,1) 48%, rgba(209,94,171,1) 73%, rgba(153,226,208,1) 93%);
+  background: linear-gradient(100deg, rgba(147,86,220,10) 15%, rgba(153,226,208,10) 100%, rgba(209,94,171,10) 40%);
   position: relative;
   border-radius: 70px 70px $zero $zero;
 }
