@@ -1,8 +1,13 @@
-@media screen and (min-width: 375px) {
-  .center_media {
-    margin-left: 2em;
-    width: 12.25rem;
-  }
+// https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
+.center_media {
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  -webkit-margin-before: 25px;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  width: 10rem;
 }
 @media screen and (min-width: 600px) {
   .menu {
@@ -77,19 +82,8 @@
     bottom: 50%;
     left: 50%;
   }
-  nav {
-    .center_media {
-      margin-left: 12em;
-    }
-  }
 }
 @media screen and (min-width: 768px) {
-  nav {
-    .center_media {
-      margin-left: 12em;
-      width: 15.25rem;
-    }
-  }
   .prev__menu__restaurants__heading--flex {
     margin-left: 1em;
     display: flex;
@@ -103,29 +97,12 @@
     width: 20rem;
   }
 }
-@media screen and (min-width: 1023px) {
-  nav {
-    .center_media {
-      margin-left: 19rem;
-      display: flex;
-    }
-  }
-}
-@media screen and (min-width: 1439px) {
-  nav {
-    .center_media {
-      margin-left: 25em;
-    }
-    .nav__picture {
-      width: 24rem;
-    }
-  }
-}
 @media screen and (min-width: 2559px) {
   nav {
     img.center_media {
-      margin-left: 56rem;
-      width: 34rem;
+      width: 16rem;
+      margin-top: 30px;
+      -webkit-margin-before: 33px;
     }
   }
 }
