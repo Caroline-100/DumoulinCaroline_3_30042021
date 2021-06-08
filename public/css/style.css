@@ -1,5 +1,5 @@
-:root {
-  font-family: sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -143,20 +143,6 @@ li > .fas.fa-hands-helping {
     opacity: 100%;
   }
 }
-@keyframes transition {
-  0% {
-    height: 0%;
-  }
-  20% {
-    height: 25%;
-  }
-  50% {
-    height: 75%;
-  }
-  100% {
-    height: 100%;
-  }
-}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -209,35 +195,34 @@ li > .fas.fa-hands-helping {
 @keyframes stroke-animation {
   0% {
     stroke-dashoffset: 0;
-    fill-opacity: url(#aa);
+    fill: url(#aa);
     fill: url(#Mygradient);
     fill: url(#Mygradientt);
     fill: url(#gradient);
   }
   30% {
     stroke-dashoffset: 1550;
-    fill-opacity: 10%;
     fill: url(#aa);
   }
   60% {
     stroke-dashoffset: 3100;
-    fill-opacity: 30%;
+    opacity: 30%;
     transform: scale(1);
     fill: url(#aa);
   }
   80% {
-    fill-opacity: 60%;
+    opacity: 60%;
     transform: scale(1.1);
     fill: url(#aa);
   }
   90% {
     transform: scale(1);
-    fill-opacity: 80%;
+    opacity: 80%;
     fill: url(#aa);
   }
   100% {
     stroke-dashoffset: 3100;
-    fill-opacity: 100%;
+    opacity: 100%;
     fill: url(#aa);
   }
 }
@@ -268,7 +253,7 @@ li > .fas.fa-hands-helping {
     fill: url(#Mygradient);
     fill: url(#Mygradientt);
     fill: url(#gradient);
-    fill-opacity: 100%;
+    opacity: 100%;
   }
 }
 nav {
@@ -525,7 +510,7 @@ li#functionality__color i {
 }
 
 .functionality__list--wide > li {
-  width: clamp 100px, 50%, 200px;
+  width: 200px;
 }
 
 .functionality__list--margin > li {
@@ -569,12 +554,8 @@ li#functionality__color i {
   color: #fffff0;
   border-radius: 1.25rem;
   font-weight: 600;
-  padding: 0.625rem;
   box-shadow: 1px 3px 3px 3px #5f537273;
-  transform: scale(1);
-  animation: transform 1s;
   transition: all 500ms;
-  font-weight: bold;
   padding: 1em 2em 1em 2em;
 }
 
@@ -583,20 +564,11 @@ li#functionality__color i {
   transform: scale(1.01);
   filter: brightness(1.1);
   box-shadow: 9px 12px 11px #91969196;
-  transition: all 500ms;
-  animation: transform 1s;
 }
 
-.reservation__btn--margin,
-#command {
+.reservation__btn--margin {
   margin-top: 2em;
   margin-bottom: 2em;
-}
-
-#command {
-  box-shadow: none;
-  text-align: center;
-  background: none;
 }
 
 .number--rounded {
@@ -667,7 +639,7 @@ li#functionality__color i {
   height: 70px;
   transform: rotate(45deg);
   animation: beat 500ms infinite, loader 1000ms;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   z-index: 1;
 }
 
@@ -705,19 +677,18 @@ section.menu article {
   margin: 1rem;
   box-shadow: 1px 1px 8px 1px #bababa;
   background-color: #ffffff;
-  transform: scale(1);
   font-size: 1em;
   overflow: hidden;
   display: flex;
 }
 section.menu article h4 {
   margin-bottom: 0;
+  margin-top: 0;
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
   transition: 500ms all;
   white-space: nowrap;
-  margin-top: 0;
   padding: 0.5em;
 }
 section.menu article .bbox {
@@ -765,8 +736,6 @@ section.menu article .choice-menu {
 .bloc {
   position: relative;
   height: auto;
-  margin: 0 auto;
-  background-color: #9356dc;
 }
 
 .bloc:hover .substitle_menu {
@@ -782,10 +751,8 @@ section.menu article .choice-menu {
 .substitle_menu {
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: 500ms all;
   padding-top: 0.1em;
   padding-left: 0.5em;
-  font-size: 0.8em;
   font-weight: lighter;
   white-space: nowrap;
   margin-top: 0;
@@ -814,10 +781,10 @@ header.heading--over {
   background-color: #f6f6f6;
   font-style: italic;
   font-weight: bolder;
-  font-size: 22px;
-  font-family: Shrikhand;
+  font-size: 20px;
 }
 header.heading--over .heading {
+  font-family: "Shrikhand", sans-serif;
   width: 100%;
   margin-left: 0.5em;
   font-size: 1.3em;
@@ -859,13 +826,13 @@ a {
 }
 
 .menu .animation_progressive {
-  animation: transition 1000ms, opacity 1000ms ease-in-out 1s forwards;
+  animation: opacity 1000ms ease-in-out 1s forwards;
 }
 .menu .animation_progressive__plate {
-  animation: transition 2500ms, opacity 2500ms ease-in-out 1s forwards;
+  animation: opacity 2500ms ease-in-out 1500ms forwards;
 }
 .menu .animation_progressive__desserts {
-  animation: transition 3500ms, opacity 3500ms ease-in-out 1s forwards;
+  animation: opacity 3500ms ease-in-out 2000ms forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

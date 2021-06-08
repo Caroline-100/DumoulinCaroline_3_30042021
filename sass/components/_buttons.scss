@@ -1,12 +1,12 @@
 .btn,
 .reservation__btn {
   @include btn_magic;
-
-  transform: scale(1);
-  animation: transform 1s;
   transition: all 500ms;
-  font-weight: bold;
   padding: 1em 2em 1em 2em;
+  
+  // transform: scale(1);
+  // animation: transform 1s;
+  // font-weight: bold;
 }
 
 .btn:hover,
@@ -14,20 +14,20 @@
   transform: scale(1.01);
   filter: brightness(1.1);
   box-shadow: 9px 12px 11px #91969196;
-  transition: all 500ms;
-  animation: transform 1s;
+  // transition: all 500ms;
+  // animation: transform 1s;
   // color: rgb(201, 193, 200);
 }
-.reservation__btn--margin,
-#command {
+// #command
+.reservation__btn--margin{
   margin-top: 2em;
   margin-bottom: 2em;
 }
-#command {
-  box-shadow: none;
-  text-align: center;
-  background: none;
-}
+// #command {
+//   box-shadow: none;
+//   text-align: center;
+//   background: none;
+// }
 .number--rounded {
   border-radius: 50%;
   width: $one;
@@ -84,6 +84,8 @@
   .heart-main:hover path {
     animation: stroke-animation 1s ease-in-out forwards;
   }
+  // exemple for use tild + definition
+  // https://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean
   .heart-main:hover ~ .heart-background path {
     animation: spread_and_fade 2s ease-in-out forwards;
   }
